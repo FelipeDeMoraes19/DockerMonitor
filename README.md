@@ -24,7 +24,7 @@ Este projeto visa monitorar contêineres Docker em tempo real, exibindo informa�
 ```
 DockerMonitor/
 │── backend/             # Backend FastAPI/Django
-│── frontend/            # Frontend React/Streamlit
+│── frontend/            # Frontend React
 │── docker/              # Configurações Docker Compose
 │── docs/                # Documentação
 │── .gitignore           # Arquivos ignorados pelo Git
