@@ -1,0 +1,9 @@
+fastapi[all]       
+uvicorn            
+docker             
+psycopg2-binary    
+SQLAlchemy         
+alembic            
+python-dotenv      
+httpx             
+prometheus-client  
