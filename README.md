@@ -52,7 +52,7 @@ DockerMonitor/
    docker-compose up -d
    ```
 
-3. Acesse o backend via **FastAPI/Django**:
+3. Acesse o backend via **FastAPI**:
    ```sh
    http://localhost:8000
    ```
