@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.docker_service import get_containers
+from app.docker_service import get_containers, get_container_stats
 
 app = FastAPI()
 
@@ -17,6 +17,10 @@ async def list_containers():
     Endpoint para listar contêineres em execução no Docker.
     """
     return {"containers": get_containers()}
+
+@app.get("/stats") 
+async def stats():
+    return {"stats": get_container_stats()}
 
 if __name__ == "__main__":
     import uvicorn
