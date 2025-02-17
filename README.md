@@ -1,77 +1,66 @@
 # 🚀 DockerMonitor
 
-Sistema de monitoramento de contêineres Docker com visualização em dashboard.
+> **A real-time Docker container monitoring system with an interactive dashboard.**
 
-## 📌 Visão Geral
+[![Docker](https://img.shields.io/badge/Docker-✅-blue?style=flat-square)](https://www.docker.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-✅-green?style=flat-square)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-✅-blue?style=flat-square)](https://react.dev/)
+[![Prometheus](https://img.shields.io/badge/Prometheus-✅-red?style=flat-square)](https://prometheus.io/)
+[![Grafana](https://img.shields.io/badge/Grafana-✅-orange?style=flat-square)](https://grafana.com/)
 
-Este projeto visa monitorar contêineres Docker em tempo real, exibindo informações sobre:
-- Uso de **CPU e memória**
-- **Tempo de execução** de cada contêiner
-- Status de **execução e logs**
-- **Alertas** e métricas em um dashboard interativo
+---
 
-## 🛠 Tecnologias Utilizadas
+## 📌 **Project Overview**
+DockerMonitor provides **real-time monitoring** of running Docker containers, displaying:
+✅ **CPU & Memory Usage**  
+✅ **Execution Time per container**  
+✅ **Container Status & Logs**  
+✅ **Alerts & Metrics via Prometheus & Grafana**  
 
-- **Backend**: FastAPI ou Django Rest Framework
-- **Banco de Dados**: PostgreSQL
-- **Frontend**: React ou Streamlit
-- **Monitoramento**: Docker SDK para Python
-- **Deploy**: Docker Compose
-- **Extras**: Prometheus e Grafana para visualização avançada
+---
 
-## 📂 Estrutura do Projeto
+## 🛠 **Tech Stack**
+- **Backend**: FastAPI
+- **Database**: PostgreSQL
+- **Frontend**: React (Recharts for graphs)
+- **Monitoring**: Docker SDK for Python
+- **Deployment**: Docker Compose
+- **Extras**: Prometheus & Grafana for advanced visualization
 
-```
+---
+
+## 📂 **Project Structure**
+```sh
 DockerMonitor/
-│── backend/             # Backend FastAPI/Django
-│── frontend/            # Frontend React
-│── docker/              # Configurações Docker Compose
-│── docs/                # Documentação
-│── .gitignore           # Arquivos ignorados pelo Git
-│── README.md            # Documentação principal
+│── backend/             
+│── frontend/            
+│── docker/              
+│── docs/                
+│── .gitignore           
+│── README.md     
+```       
+
+## 🚀 **Getting Started**
+
+### 🔹 Prerequisites
+- ✅ Docker & Docker Compose installed
+- ✅ Python 3.9+
+- ✅ Node.js
+
+### 🔹 Installation
+1. Clone the repository:
+```sh
+git clone https://github.com/FelipeDeMoraes19/DockerMonitor.git
+cd DockerMonitor
 ```
 
-## ⚙️ Instalação e Configuração
+2. Start all services with Docker Compose:
+```bash
+docker-compose up -d
+```
 
-### **Pré-requisitos**
-- Docker e Docker Compose instalados
-- Python 3.9+
-- Node.js
-
-### **Passos para rodar o projeto**
-
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/FelipeDeMoraes19/DockerMonitor.git
-   cd DockerMonitor
-   ```
-
-2. Inicie os serviços com Docker Compose:
-   ```sh
-   docker-compose up -d
-   ```
-
-3. Acesse o backend via **FastAPI/Django**:
-   ```sh
-   http://localhost:8000
-   ```
-
-4. Acesse o frontend via **React/Streamlit**:
-   ```sh
-   http://localhost:3000
-   ```
-
-## 🔥 Endpoints da API
-
-| Método  | Rota               | Descrição                         |
-|---------|--------------------|---------------------------------|
-| GET     | `/healthcheck`      | Verifica se o backend está rodando |
-| GET     | `/containers`       | Lista todos os contêineres ativos |
-| GET     | `/metrics`          | Retorna métricas para Prometheus  |
-
-## 📊 Dashboard e Monitoramento
-
-- O sistema utiliza **Prometheus** para coletar métricas dos contêineres
-- O **Grafana** exibe essas métricas em tempo real
-- Acesse o painel do Grafana em: `http://localhost:3001`
-
+## 🌐 **Access Services**
+- ✅ Backend (FastAPI/Django): http://localhost:8000
+- ✅ Frontend (React/Streamlit): http://localhost:3000
+- ✅ Grafana Dashboard: http://localhost:3001
+*(Credentials: admin/admin)*
