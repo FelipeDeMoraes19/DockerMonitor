@@ -18,7 +18,7 @@ const ContainerStats = () => {
     fetch("http://localhost:8000/stats")
       .then((response) => response.json())
       .then((data) => {
-        console.log("🚀 Estatísticas recebidas:", data); // 🔍 LOG PARA DEBUG
+        console.log("🚀 Estatísticas recebidas:", data); 
         if (data && Array.isArray(data.stats)) {
           const formattedStats = data.stats.map(stat => ({
             id: stat.id,

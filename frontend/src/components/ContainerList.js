@@ -10,7 +10,7 @@ const ContainerList = () => {
     fetch("http://localhost:8000/containers")
       .then((response) => response.json())
       .then((data) => {
-        console.log("🚀 Dados recebidos:", data); // 🔍 LOG PARA DEBUG
+        console.log("🚀 Dados recebidos:", data); 
         if (data && Array.isArray(data.containers)) {
           setContainers(data.containers);
         } else {
